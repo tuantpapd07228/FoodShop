@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+                  <ImageButton
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:src="@drawable/baseline_person_outline_24"
+                      android:background="@android:color/transparent"
+                      android:id="@+id/btnperson"/>
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lnloBeeAction"
+                      android:orientation="vertical"
+                      android:layout_weight="8">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"
+                          android:text="Welcomto To"/>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Healthy mart"
+                          android:gravity="center"
+                          android:textSize="22sp"
+                          android:textColor="@color/green"/>
+                  </LinearLayout>
+                  <ImageButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/btnSearch"
+                      android:src="@drawable/baseline_saved_search_24"
+                      android:background="@android:color/transparent"/>
+              </LinearLayout>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/homebanner"/>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                  android:id="@+id/rcvNav"
+                  android:orientation="horizontal"/>
+              <FrameLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/homefragment"
+
+                  />
+          </LinearLayout>
+      </androidx.core.widget.NestedScrollView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        android:id="@+id/lavbee"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

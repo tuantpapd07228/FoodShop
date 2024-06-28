@@ -1,0 +1,38 @@
+package com.example.asmand103.request
+
+data class GHNRequest(
+    val client_order_code: String,
+    var cod_amount: Int,
+    val content: String,
+    val coupon: Any,
+    val deliver_station_id: Any,
+    var from_address: String,
+    var from_district_name: String,
+    var from_name: String,
+    var from_phone: String,
+    var from_province_name: String,
+    var from_ward_name: String,
+    val height: Int,
+    val insurance_value: Int,
+    val items: List<Item>,
+    val length: Int,
+    val note: String,
+    val payment_type_id: Int,
+    val pick_shift: List<Int>,
+    val pick_station_id: Int,
+    val required_note: String,
+    val return_address: String,
+    val return_district_id: Any,
+    val return_phone: String,
+    val return_ward_code: String,
+    val service_id: Int,
+    val service_type_id: Int,
+    var to_address: String,
+    var to_district_id: Int,
+    var to_name: String,
+    var to_phone: String,
+    var to_ward_code: String,
+    val weight: Int,
+    val width: Int
+)
+
